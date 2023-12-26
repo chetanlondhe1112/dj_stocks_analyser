@@ -1,0 +1,35 @@
+
+.equity_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.equity_content .equity_info_content{
+    display: flex;
+    flex: 1;
+}
+
+.equity_content .equity_main_content{
+    display: flex;
+    flex: 4;
+    height: 40vh;
+}
+
+.equity_content .equity_main_content .equity_main_section{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.equity_content .equity_main_content .equity_main_section .equity_html_table{
+    border-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    gap: 3px;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}

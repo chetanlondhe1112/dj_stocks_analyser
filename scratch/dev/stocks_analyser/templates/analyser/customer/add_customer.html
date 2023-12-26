@@ -1,0 +1,143 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block title %}Customers Registration{% endblock %}
+
+{% block content %}
+    <div class="customer_content">
+
+        <div class="customer_info_content">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+            </svg> Customers </h1>
+
+        </div>
+
+        <div class="customer_main_content">
+            <div class="customer_main_section">
+                <div class="customer_modules_buttons">
+                    <div class="buttons_section">
+                        <button><a href="{% url 'customer'%}">Register</a></button>
+                    <div>
+                </div>
+
+                <div class="customer_registration_section">
+                    <h2>Customer Registeration</h2>
+                    <div class="customer_registration_form">
+                        <form method="post" action="">
+                            <div class="customer_registration_personal_details">
+                                <label><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                  </svg> Customer Personal Details</label>
+                                <div class="first_col">
+                                        <label for="first_name">First name:</label>
+                                        <input type="text" name="first_name" placeholder="Enter First Name">
+                                  
+                                        <label for="middle_name">Middle name:</label>
+                                        <input type="text" name="middle_name" placeholder="Enter Middle Name">
+                                </div>
+                                
+                                <div class="second_col">
+                                    <label for="last_name">Last name:</label>
+                                    <input type="text" name="last_name" placeholder="Enter Last Name">
+        
+                                    <label for="pwd">Password:</label>
+                                    <input type="text" name="pwd" placeholder="Enter Password">
+                                </div>
+                                 
+                            </div>
+                            <br>
+
+                            <div class="customer_registration_professional_details">
+                                <label><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
+                                    <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12z"/>
+                                  </svg> Customer Professional Details</label>
+                                
+                                <div class="first_col">
+                                    <label for="pan">Pan Number:</label>
+                                    <input type="number" name="pan">
+                                    
+                                    <label for="aadhar">Aadhar Number:</label>
+                                    <input type="number" name="aadhar">
+                                </div>
+
+                                <div class="second_col">
+                                    <label for="mobileno">Mobile Number:</label>
+                                    <input type="number" name="mobileno">
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="customer_registration_trading_details">
+
+                                <label><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                                    <path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+                                  </svg> Customer Trading Details</label>
+
+                                <div class="first_col">
+                                    <label for="angel_user">Angel Username:</label>
+                                    <input type="text" name="angel_user">
+        
+                                    <label for="angel_pwd">Angel Password:</label>
+                                    <input type="text" name="angel_pwd">
+                                </div>
+
+                                <div class="second_col">
+
+                                    <label for="fin_q">Fin Quantity:</label>
+                                    <input type="number" name="fin_q">
+        
+                                    <label for="totpkey">TOTP Key:</label>
+                                    <input type="text" name="totpkey">                                
+                                </div>
+
+                                <div class="first_col">
+                                    <label for="initialdeposit">Initial Deposit:</label>
+                                    <input type="number" name="initialdeposit">
+        
+                                    <label for="available_margin">Available Margin:</label>
+                                    <input type="number" name="available_margin">
+                                </div>
+                                    
+
+                                <div class="second_col">
+                                    <label for="lotsize">Lot Size:</label>
+                                    <input type="number" name="lotsize">
+        
+                                    <label for="apikey">API Key:</label>
+                                    <input type="text" name="apikey">
+                                </div>
+
+                                <div class="first_col">
+                                    <label for="asmita_apikey">Asmita API Key:</label>
+                                    <input type="text" name="asmita_apikey">
+        
+                                    <label for="ha_apikey">HA API Key:</label>
+                                    <input type="text" name="apikey">
+                                </div>
+                                    
+                                <div class="second_col">
+                                    <label for="status">Status:</label>
+                                    <input type="number" name="status">
+        
+                                    <label for="strategyflag">Strategy Flag:</label>
+                                    <input type="number" name="strategyflag">
+                                </div>
+                                    
+                            </div>
+                            
+                            <div class="register_button">
+                                <button type="submit">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

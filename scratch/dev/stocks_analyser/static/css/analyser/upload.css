@@ -1,0 +1,58 @@
+
+.upload_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.upload_content .upload_info_content{
+    display: flex;
+    flex: 1;
+}
+
+.upload_content .upload_main_content{
+    display: flex;
+    flex: 4;
+    height: 40vh;
+}
+
+.upload_content .upload_main_content .upload_main_section{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+
+}
+
+
+.upload_content .upload_main_content .upload_main_section .equity_file_uploader form {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(214, 211, 211);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#csvInput{
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+}
+
+#uploader_submit{
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgb(85, 120, 235);
+    color: white;
+    border:none;
+}
+
+#equity_file_name{
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(214, 211, 211);
+    padding: 10px;
+    border-radius: 10px;
+    width: 95%;
+}

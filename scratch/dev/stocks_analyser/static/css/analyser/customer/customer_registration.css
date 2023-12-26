@@ -1,0 +1,142 @@
+
+.customer_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customer_content .customer_info_content{
+    display: flex;
+    flex: 1;
+}
+
+.customer_content .customer_main_content{
+    display: flex;
+    flex: 4;
+    height: 40vh;
+    
+}
+.customer_content .customer_main_content .customer_main_section{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.buttons_section button{
+    list-style-type:none;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color:rgb(76, 114, 240);
+    font-size: medium;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    margin-left: 5px;
+
+}
+
+.buttons_section button a{
+    color: white;  
+    text-decoration: none; 
+}
+
+.customer_registration_section{
+    padding: 5px;
+
+}
+
+.customer_registration_form{
+    padding: 10px;
+
+}
+
+.customer_registration_form form{
+    border-style: solid;
+    padding: 10px;
+    border-color: rgb(209, 208, 208);
+    border-radius: 5px;
+    border-width: 1px;
+    width: fit-content;
+}
+
+
+.customer_registration_personal_details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.customer_registration_personal_details label{
+    padding: 10px;
+}
+
+.customer_registration_personal_details input{
+    padding: 10px;
+    border-color: rgb(209, 208, 208);
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+
+.customer_registration_professional_details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.customer_registration_professional_details label{
+    padding: 10px;
+}
+
+.customer_registration_professional_details input{
+    padding: 10px;
+    border-color: rgb(209, 208, 208);
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+
+.customer_registration_trading_details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.customer_registration_trading_details label{
+    padding: 10px;
+}
+
+.customer_registration_trading_details input{
+    padding: 10px;
+    border-color: rgb(209, 208, 208);
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.first_col{
+    flex: 2;
+}
+
+.second_col{
+    flex: 2;
+}
+
+.register_button {
+    padding: 10px;
+    justify-content: center;
+}
+
+.register_button button{
+    list-style-type:none;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color:rgb(76, 114, 240);
+    font-size: medium;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    width: 100%;
+}
